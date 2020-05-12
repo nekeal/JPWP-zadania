@@ -55,8 +55,8 @@ class Server(object):
                             wyniki = gracz.gra.get_wyniki_gracza()
                             wyslij_informacje[4] = wyniki
                        # Tu napisz kod obsługujący klucz 5
-
-
+                        elif key == 5:
+                            wyslij_informacje[5] = gracz.gra.liczba_rund
                         elif key == 6:
                             haslo = gracz.gra.runda.haslo
                             wyslij_informacje[6] = haslo

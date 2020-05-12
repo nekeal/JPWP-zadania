@@ -17,6 +17,16 @@ class Player():
         ###############
         #KOD DO ZADANIA 1.3
         ##############
+        pressed_keys = pygame.key.get_pressed()
+
+        if pressed_keys[pygame.K_UP]:
+            self.y += self.vel
+        elif pressed_keys[pygame.K_DOWN]:
+            self.y -= self.vel
+        elif pressed_keys[pygame.K_RIGHT]:
+            self.x += self.vel
+        elif pressed_keys[pygame.K_LEFT]:
+            self.x -= self.vel
 
         self.update()
 
